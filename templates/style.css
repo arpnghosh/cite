@@ -1,0 +1,137 @@
+body {
+  width: 40em;
+  max-width: 95vw;
+  background-color: #161616;
+  color: #f2f4f8;
+  font-family: sans-serif;
+  text-align: justify;
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+article {
+  margin-bottom: 2em;
+}
+
+time {
+  display: block;
+  color: #525252;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.3em;
+}
+h3 {
+  font-size: 1em;
+}
+
+a {
+  color: #78a9ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #be95ff;
+}
+
+code {
+  font-family:
+    "Iosevka", "Iosevka Term", "Berkeley Mono", "TX-02", "SF Mono", "Liga SF Mono", "MonoLisa",
+    "JetBrains Mono", "Fira Code", "Source Code Pro", "Cascadia Code", Menlo,
+    Consolas, monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  font-family:
+    "Iosevka", "Berkeley Mono", "TX-02", "SF Mono", "Liga SF Mono", "MonoLisa",
+    "JetBrains Mono", "Fira Code", "Source Code Pro", "Cascadia Code", Menlo,
+    Consolas, monospace;
+  font-size: 0.85em;
+  border: 1px solid #393939;
+  padding: 10px;
+  overflow-x: scroll;
+  background-color: #262626;
+  border-radius: 6px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+  max-width: 45vw;
+}
+
+footer {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #393939;
+  color: #525252;
+  font-size: 0.9em;
+}
+
+.footnotes {
+  margin-top: 2em;
+  font-size: 1em;
+  color: #dde1e6;
+}
+
+.footnotes hr {
+  display: none;
+}
+
+.footnotes ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footnotes li {
+  margin-bottom: 1em;
+  counter-increment: list-item;
+}
+
+.footnotes li p {
+  display: inline;
+}
+
+.footnotes li::before {
+  content: "[" counter(list-item) "] ";
+  color: #f2f4f8;
+}
+
+.footnote-ref {
+  font-size: 1em;
+  vertical-align: baseline;
+}
+
+.footnote-ref::before {
+  content: "[";
+}
+
+.footnote-ref::after {
+  content: "]";
+}
+
+.footnote-backref {
+  font-size: 0;
+}
+
+.footnote-backref::after {
+  content: "Jump back";
+  font-size: 1rem;
+  color: #78a9ff;
+}
+
+.footnote-backref:hover::after {
+  color: #be95ff;
+}
