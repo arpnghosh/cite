@@ -14,7 +14,6 @@ import (
 	"time"
 
 	"github.com/goccy/go-yaml"
-	"github.com/microcosm-cc/bluemonday"
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
@@ -121,14 +120,12 @@ func main() {
 		slug = strings.ToLower(slug)
 		slug = strings.ReplaceAll(slug, " ", "-")
 
-		sanitized := bluemonday.UGCPolicy().Sanitize(buf.String())
-
 		page := Page{
 			Title:       fm.Title,
 			Description: fm.Description,
 			Date:        fm.Date.Format("2006-01-02"),
 			RawDate:     fm.Date,
-			Content:     template.HTML(sanitized),
+			Content:     template.HTML(buf.String()),
 			Slug:        slug,
 			SourcePath:  path,
 			OutputPath:  filepath.Join("build", slug+".html"),
