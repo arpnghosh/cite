@@ -11,10 +11,22 @@
 </head>
 
 <body>
-<h1>{{.SiteName}}</h1>
+
+<h1>{{.SiteName}} </h1>
+
+<!-- <div class="links"> -->
+<!-- <a href="mailto:arpnghosh@protonmail.com">Email</a> | -->
+<!-- <a href="">RSS</a> | -->
+<!-- <a href="https://github.com/arpnghosh">GitHub</a> -->
+<!-- </div> -->
+
+<h2> Writings </h2>
 
 {{range .Posts}}
-<h2>{{.Date}} <a href="{{.Slug}}.html">{{.Title}}</a></h2>
+<h3 class="post">
+  <span class="post-date">{{.Date}}</span>
+  <a class="post-link" href="{{.Slug}}.html">{{.Title}}</a>
+</h3>
 {{end}}
 
 </body>

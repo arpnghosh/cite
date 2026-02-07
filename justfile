@@ -31,4 +31,4 @@ dev:
 
 clean:
     @echo "Cleaning build directory..."
-    rm -rf build/*
+    rm -rf cite build/*
