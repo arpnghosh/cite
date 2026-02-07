@@ -1,3 +1,6 @@
 [submodule "content"]
 	path = content
 	url = git@github.com:arpnghosh/content.git
+[submodule "public/fonts"]
+	path = public/fonts
+	url = git@github.com:arpnghosh/fonts.git
